@@ -121,3 +121,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# versionando o codigo
+REST_FRAMEWORK = {
+    'DEFAULT_VERSIONING_CLASS': 'rest_framework.versioning.QueryParameterVersioning'
+}
