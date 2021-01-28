@@ -8,7 +8,6 @@ class Aluno(models.Model):
     cpf = models.CharField(max_length=11)
     data_nascimento = models.DateField()
     celular = models.CharField(max_length=11, default='')
-    
 
     def __str__(self):
         return self.nome

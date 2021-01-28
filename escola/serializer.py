@@ -30,8 +30,8 @@ class ListaAlunosMatriculadosSerializer(serializers.ModelSerializer):
     class Meta:
         model = Matricula
         fields = ['aluno_nome']
-
+# Versão 2 
 class AlunoSerializerV2(serializers.ModelSerializer):
     class Meta:
         model = Aluno
-        fields = ['id', 'nome', 'celular','rg', 'cpf','data_nascimento','celular']
+        fields = ['id', 'nome','celular', 'rg', 'cpf', 'data_nascimento']
