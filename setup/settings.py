@@ -121,7 +121,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# versionando o codigo e arrumando o codigo com as permisoes 
+# versionando o codigo e arrumando o codigo com as permisoes e limitaçao de request
 REST_FRAMEWORK = {
     'DEFAULT_VERSIONING_CLASS': 'rest_framework.versioning.QueryParameterVersioning',
     'DEFAULT_PERMISSION_CLASSES':[
@@ -131,4 +131,10 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES':[
         'rest_framework.authentication.BasicAuthentication'
     ],
+#     'DEFAULT_THROTTLE_CLASSES': [
+#        'rest_framework.throttling.AnonRateThrottle'
+#    ],
+#    'DEFAULT_THROTTLE_RATES': {
+#        'anon': '5/day'
+#    }
 }
